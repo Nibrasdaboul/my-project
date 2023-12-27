@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&family=Ubuntu:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+/* !HEADER */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 5px #a7a7a7;
+    z-index: 1000;
+}
+/* !HEADER-LOGO */
+header .logo {
+    margin-left: 80px;
+    transform: scale(0.9);
+}
+/* !HEADER-NAVBAR */
+header .navbar ul{
+    display: flex;
+    transform: translateX(-150px); 
+}
+header .navbar ul li a{
+    margin : 0 20px ;
+    font-size: 25px;
+    font-weight: 500;
+    background: linear-gradient(to bottom ,#000000 , #bfbfbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* !HOME*/
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translateY(80px);
+}
+/* !HOME-IMAGE*/
+.home .home-image img{
+    width: 550px;
+    transform: translateX(-100px);
+    transform: translateY(100px);
+
+}
+/* !HOME-TEXT*/
+.home .home-text{
+    transform: translateY(100px);
+}
+/* TODO P1*/
+.home .home-text .p1{
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+/* TODO P2*/
+.home .home-text .p2{
+    font-weight: 400;
+    line-height: 25px;
+}
+/* TODO BUTTON*/
+.home .home-text a{
+    background: #000;
+    color: #fff;
+    padding:  15px 20px;
+    position: relative;
+    top: 20px;
+    border-radius: 15px;
+}
+
+/* !SPECS */
+
+.specs{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    transform: translateX(20px);
+    top: 300px;
+    height: 700px;
+}
+/* TODO SPECS-TITLE */
+.specs h1{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 200px;
+    font-size: 70px;
+    background: linear-gradient(to bottom ,#000000 , #bfbfbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* !SPECS-TEXT */
+.specs .specs-text {
+    transform: translateY(100px);
+}
+/* TODO SPECS-TEXT-ICONS*/
+.specs .specs-text i{
+    font-size: 20px;
+}
+
+/* TODO P1*/
+.specs .specs-text .p1{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* TODO P2*/
+.specs .specs-text .p2{
+    margin-bottom: 15px;
+}
+
+/* !SPECS-IMAGE */
+.specs .specs-image img{
+    width: 700px;
+    transform: translateY(100px);
+}
+
+
+/* !SHOP */
+
+.shop{
+    position: relative;
+    top: 400px;
+    transform: scale(0.8);
+}
+
+/* TODO SHOP-TITLE */
+.shop h1{
+    position: relative;
+    left: 40%;
+    top: 80px;
+    font-size: 70px;
+    background: linear-gradient(to bottom ,#000000 , #bfbfbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* !SHOP-COLUMN 1 */
+.shop .column-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    transform: translateY(100px);
+}
+
+/* TODO SHOP-COLUMN 1 && 2 ITEM 1 && 4*/
+/* TODO SHOP-COLUMN 1 && 2 ITEM 2 && 5*/
+
+.shop .column-1 .item1,
+.shop .column-1 .item2{
+    box-shadow: 0 0 20px #bfbfbf;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+
+/* TODO SHOP-COLUMN 1 && 2 ITEM 3 && 6 */
+.shop .column-1 .item3{
+    width: 330px;
+    height: 428px;
+    box-shadow:  0 0 20px #bfbfbf;
+    border-radius: 20px;
+}
+
+/* TODO SHOP-COLUMN 1 && 2 ITEM 1 IMAGE */
+/* TODO SHOP-COLUMN 1 && 2 ITEM 2 IMAGE */
+
+.shop .column-1 .item1 img,
+.shop .column-1 .item2 img{
+    width: 350px;
+}
+
+/* TODO SHOP-COLUMN 1 && 2 ITEM 3 && 6 IMAGE */
+.shop .column-1 .item3 .image3{
+        height: 350px;
+        width: 350px;
+}
+.shop .column-1 .item3 img{
+    width: 230px;
+    transform: translate(50px, 15px);
+}
+
+/* TODO SHOP-COLUMN 1 && 2 ITEM 1 && 4 P1 */
+/* TODO SHOP-COLUMN 1 && 2 ITEM 2 && 5 P1 */
+/* TODO SHOP-COLUMN 1 && 2 ITEM 3 && 6 P1 */
+.shop .column-1 .item1 .p1,
+.shop .column-1 .item2 .p1,
+.shop .column-1 .item3 .p1{
+    font-weight: 700;
+    font-size: 20px;
+}
+/* TODO SHOP-COLUMN 1 && 2 ITEM 1 && 4 price */
+/* TODO SHOP-COLUMN 1 && 2 ITEM 2 && 5 price */
+/* TODO SHOP-COLUMN 1 && 2 ITEM 3 && 6 price */
+.shop .column-1 .item1 .price,
+.shop .column-1 .item2 .price,
+.shop .column-1 .item3 .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+} 
+
+/* TODO SHOP-COLUMN 1 && 2 ITEM 1 && 4 price p2*/
+/* TODO SHOP-COLUMN 1 && 2 ITEM 2 && 5 price p2*/
+/* TODO SHOP-COLUMN 1 && 2 ITEM 3 && 6 price p2*/
+.shop .column-1 .item1 .price .p2,
+.shop .column-1 .item2 .price .p2,
+.shop .column-1 .item3 .price .p2{
+    font-size: 20px;
+}
+/* TODO SHOP-COLUMN 1 && 2 ITEM 1 && 4 price icon */
+/* TODO SHOP-COLUMN 1 && 2 ITEM 2 && 5 price icon */
+/* TODO SHOP-COLUMN 1 && 2 ITEM 3 && 6 price icon */
+.shop .column-1 .item1 .price i,
+.shop .column-1 .item2 .price i,
+.shop .column-1 .item3 .price i{
+    color: #fff;
+    background: #000;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+}
+/* TODO IMAGE 4 */
+#img1{
+    width: 350px;
+    height: 350px;
+}
+
+#img1{
+    transform: scale(0.7);
+    position: relative;
+    bottom: 40px;
+}
+/* TODO IMAGE 5 */
+#img2{
+    width: 350px;
+    height: 350px;
+}
+#img2{
+    transform: scale(0.7);
+    position: relative;
+    bottom: 40px;
+}
+
+
+/* !BUDS */
+.buds{
+    transform: translateY(450px);
+
+}
+
+/* !BETS-BOX */
+.buds .beats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #161616;
+    width: 80%;
+    transform: translateX(170px);
+    border-radius: 20px;
+    position: relative;
+    top: 170px;
+}
+
+/* !BETS-BOX-TEXT */
+
+/* TODO P1 */
+.buds .beats .beats-text .p1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* TODO P2 */
+.buds .beats .beats-text .p2{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+/* TODO P3 */
+.buds .beats .beats-text .p3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+/* TODO BUTTON */
+.buds .beats .beats-text a{
+    color: #fff;
+    background: #000;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+
+/* !FOOTER */
+footer{
+    transform: translateY(800px);
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}
+
+/* ! ROW 2 */
+
+/* TODO P1 */
+footer .row2 .p1{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* TODO NAVBAR */
+footer .row2 ul li {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+/* ! ROW 3 */
+
+/* TODO P2 */
+footer .row3 .p2{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* TODO NAVBAR */
+footer .row3 ul li {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+/* ! ROW 4 */
+
+/* TODO P3 */
+footer .row4 .p3{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* TODO NAVBAR */
+footer .row4 ul{
+    display: flex;
+}
+footer .row4 ul li{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+footer .row4 ul li a{
+    width: 50px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    header .logo{
+       position: relative;
+       left: 400px;
+    }
+    header .navbar ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+    }
+}
