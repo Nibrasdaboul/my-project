@@ -1,0 +1,1043 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 25px;
+    font-family: 'Poppins';
+    color: #000;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent,  #ff0000);
+    border-radius: 20px;
+
+}
+body{
+    overflow-x: hidden;
+}
+/* !HEADER*/
+
+header{
+    background: url(CarsImages/Background-home.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-clip: #ff0000;
+    position: relative;
+    bottom: 200px;
+}
+
+/* todo HEAD */
+
+header .head{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 150px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    width: 90%;
+    z-index: 2;
+}
+
+
+/* todo LOGO */
+
+header .head .logo span{
+    font-weight: 900;
+    color: #ff0000;
+}
+
+
+/* todo NAVBAR */
+
+header .head .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+header .head .navbar ul li a{
+    margin-right: 50px;
+    font-size: 20px;
+    text-decoration: none;
+}
+header .head .navbar ul li a:hover{
+    border-bottom: #ff0000 solid;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+
+/* todo SEARCH ICON */
+
+#search-icon{
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.search-box{
+    position: absolute;
+    top: -110%;
+    right: 0;
+    left: 0;
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+    background: #fff;
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+    clip-path: circle(0% at 100% 0%);
+}
+.search-box.active{
+    top: 90%;
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.4s;
+}
+.search-box input[type="search" i]{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+} 
+
+
+
+/* !HOME */
+
+header .home{
+    margin-top: 200px;
+    margin-left: 150px;
+    text-transform: capitalize;
+}
+
+
+/* todo HOME-TEXT */
+
+header .home h1{
+    position: relative;
+    top: 200px;
+    font-size: 50px;
+    font-weight: 900;
+}
+header .home h1 span{
+    color: #ff0000;
+    font-size: 50px;
+    font-weight: 900;
+}
+header .home p{
+    font-size: 20px;
+    position: relative;
+    top: 200px;
+}
+
+/*todo HOME-BTN */
+
+header .home .btn1{
+    background: #ff0000;
+    padding: 10px;
+    width: 180px;
+    margin-top: 25px;
+    position: relative;
+    top: 200px;
+}
+header .home .btn1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* ! CARS */
+
+.Cars{
+    width: 100%;
+    display: grid;
+}
+
+/* ! CARS-TEXT */
+
+.Cars .Cars-text {
+    display: grid;
+    transition: 0.5s;
+}
+.Cars .Cars-text .p1{
+    justify-self: center;
+    margin-top: 20px;
+    color: #ff0000;
+
+}
+.Cars .Cars-text .p2{
+    justify-self: center;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0;
+}
+.Cars .Cars-text .p3{
+    justify-self: center;
+    margin: 0;
+}
+
+
+/* ! CARS-IMAGES */
+
+.Cars-Images{
+    justify-self: center;
+    margin-right: 30px;
+}
+
+/* todo COLUMN 1 */
+
+.column1{
+    display: flex;
+    position: relative;
+    right: 20px;
+    position: relative;
+    transition: 0.5s;
+
+}
+
+/*! 1 */
+.column1 .car11{
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 430px;
+    height: 286.888px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* todo IMG 1 */
+
+.column1 .car11 img{
+    width: 430px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.column1 .car11:hover img{
+    transform: scale(1.1);
+}
+
+/* todo BTN 1 */
+
+.column1 .car11 .btn1{
+    text-decoration: none;
+    background: #cccccc;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 70px;
+    left: 10px;
+    transition: 0.5s;
+}
+.column1 .car11 .btn1:hover{
+    border: 2px solid #bd0000;
+    box-shadow: 0 0 10px 8px #ff0000;
+}
+.column1 .car11:hover .btn1{
+    color: #fff;
+    background: #ff0000;
+}
+
+
+/*! 2 */
+
+.column1 .car12{
+    margin-top: 20px;
+    width: 430px;
+    height: 286.888px;
+    overflow: hidden;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+/* todo IMG 2 */
+
+.column1 .car12 img{
+    width: 430px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.column1 .car12:hover img{
+    transform: scale(1.1);
+}
+
+/* todo BTN 2 */
+
+.column1 .car12 .btn2{
+    text-decoration: none;
+    background: #cccccc;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 70px;
+    left: 10px;
+    transition: 0.5s;
+}
+.column1 .car12 .btn2:hover{
+    border: 2px solid #bd0000;
+    box-shadow: 0 0 10px 8px #ff0000;
+}
+.column1 .car12:hover .btn2{
+    color: #fff;
+    background: #ff0000;
+}
+
+
+/*! 3 */
+
+.column1 .car13{
+    margin-top: 20px;
+    width: 430px;
+    height: 286.888px;
+    overflow: hidden;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+/* todo IMG 3 */
+
+.column1 .car13 img{
+    width: 430px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.column1 .car13:hover img{
+    transform: scale(1.1);
+}
+
+/* todo BTN 3 */
+
+.column1 .car13 .btn3{
+    text-decoration: none;
+    background: #cccccc;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 70px;
+    left: 10px;
+    transition: 0.5s;
+}
+.column1 .car13 .btn3:hover{
+    border: 2px solid #bd0000;
+    box-shadow: 0 0 10px 8px #ff0000;
+}
+.column1 .car13:hover .btn3{
+    color: #fff;
+    background: #ff0000;
+}
+
+
+
+/* todo COLUMN 2 */
+
+.column2{
+    display: flex;
+    position: relative;
+    right: 20px;
+    transition: 1s;
+    position: relative;
+}
+
+/*! 1 */
+.column2 .car21{
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 430px;
+    height: 286.888px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* todo IMG 4 */
+
+.column2 .car21 img{
+    width: 430px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.column2 .car21:hover img{
+    transform: scale(1.1);
+}
+
+/* todo BTN 4 */
+
+.column2 .car21 .btn4{
+    text-decoration: none;
+    background: #cccccc;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 70px;
+    left: 10px;
+    transition: 0.5s;
+}
+.column2 .car21 .btn4:hover{
+    border: 2px solid #bd0000;
+    box-shadow: 0 0 10px 8px #ff0000;
+}
+.column2 .car21:hover .btn4{
+    color: #fff;
+    background: #ff0000;
+}
+
+
+/*! 2 */
+.column2 .car22{
+    margin-top: 20px;
+    width: 430px;
+    height: 286.888px;
+    overflow: hidden;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+/* todo IMG 5 */
+
+.column2 .car22 img{
+    width: 430px;
+    height: 350px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.column2 .car22:hover img{
+    transform: scale(1.1);
+}
+
+/* todo BTN 5 */
+
+.column2 .car22 .btn5{
+    text-decoration: none;
+    background: #cccccc;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 135px;
+    left: 10px;
+    transition: 0.5s;
+}
+.column2 .car22 .btn5:hover{
+    border: 2px solid #bd0000;
+    box-shadow: 0 0 10px 8px #ff0000;
+}
+.column2 .car22:hover .btn5{
+    color: #fff;
+    background: #ff0000;
+}
+
+
+/*! 3 */
+.column2 .car23{
+    margin-top: 20px;
+    width: 430px;
+    height: 286.888px;
+    overflow: hidden;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+/* todo IMG 6 */
+
+.column2 .car23 img{
+    width: 430px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.column2 .car23:hover img{
+    transform: scale(1.1);
+}
+
+/* todo BTN 6 */
+
+.column2 .car23 .btn6{
+    text-decoration: none;
+    background: #cccccc;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 70px;
+    left: 10px;
+    transition: 0.5s;
+}
+.column2 .car23 .btn6:hover{
+    border: 2px solid #bd0000;
+    box-shadow: 0 0 10px 8px #ff0000;
+}
+.column2 .car23:hover .btn6{
+    color: #fff;
+    background: #ff0000;
+}
+
+
+/* !ABOUT */
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
+
+/* !ABOUT-IMAGE */
+
+.about-img img{
+    width: 650px;
+    margin-left: 40px;
+    position: relative;
+    transition: 1s;
+}
+
+/* !ABOUT-TEXT */
+
+.about .about-text{
+    margin-right: 150px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+
+/* todo P ELEMENTS */
+
+.about .about-text .p1{
+    color: #ff0000; 
+
+
+}
+.about .about-text .p2{
+    font-size: 50px;
+    font-weight: 900;
+}
+.about .about-text .p3{
+    font-size: 20px; 
+    margin-bottom: 30px;
+}
+
+/* todo ABOUT-TEXT- BTN */
+
+.about .about-text .about-btn a{
+    background: #ff0000;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+
+}
+
+
+/* !PARTS */
+
+.parts{
+    width: 100%;
+    display: grid;
+    margin-top: 100px;
+}
+
+/* ! PARTS-TEXT */
+
+.parts .parts-text {
+    display: grid;
+    transition: 0.5s;
+}
+.parts .parts-text .p1{
+    justify-self: center;
+    margin-top: 20px;
+    color: #ff0000;
+}
+.parts .parts-text .p2{
+    justify-self: center;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0;
+}
+.parts .parts-text .p3{
+    justify-self: center;
+    margin: 0;
+}
+
+
+/* !PARTS-IMAGES */
+
+.parts .parts-image{
+    width: 100%;
+}
+
+/* !PARTS-IMAGES-COLUMN 1 && PARTS-IMAGES-COLUMN 2 */
+
+.parts .parts-image .parts-column1 {
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+}
+#parts-column2{
+    position: relative;
+    transition: 0.5s;
+}
+
+/* todo ELEMENT 1  && 4*/
+
+.parts .parts-image .parts-column1 .parts11{
+    background: #ebebeb;
+    border-radius: 20px;
+    margin-left: 120px;
+    padding: 25px;
+    margin-top: 20px;
+}
+/* ! IMAGE 1 && IMAGE 4*/
+.parts .parts-image .parts-column1 .parts11 img{
+    width: 350px;
+    height: 280px;
+}
+/* !P 1 */
+.parts .parts-image .parts-column1 .parts11 .p1{
+    font-weight: 900;
+}
+/* !P 2 */
+.parts .parts-image .parts-column1 .parts11 .p2{
+    color: #ff0000;
+}
+/* !P 3 && i */
+.parts .parts-image .parts-column1 .parts11 .p3,
+.parts .parts-image .parts-column1 .parts11 i{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #ff0000;
+    margin-bottom: 5px;
+}
+/* ! P11 BUTTONS */
+.parts .parts-image .parts-column1 .parts11 .btns1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* !BTN 1 */
+.parts .parts-image .parts-column1 .parts11 .btns1 .btn1{
+    background: #ff0000;
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+}
+/* !BTN 2 */
+.parts .parts-image .parts-column1 .parts11 .btns1 .btn2{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* todo ELEMENT 2  && 5 */
+
+.parts .parts-image .parts-column1 .parts12{
+    background: #ebebeb;
+    border-radius: 20px;
+    margin-left: 35px;
+    padding: 25px;
+    margin-top: 20px;
+}
+/* ! IMAGE 2 &&  5 */
+.parts .parts-image .parts-column1 .parts12 img{
+    width: 350px;
+    height: 280px;
+}
+/* !P 1 */
+.parts .parts-image .parts-column1 .parts12 .p1{
+    font-weight: 900;
+}
+/* !P 2 */
+.parts .parts-image .parts-column1 .parts12 .p2{
+    color: #ff0000;
+}
+/* !P 3 && i */
+.parts .parts-image .parts-column1 .parts12 .p3,
+.parts .parts-image .parts-column1 .parts12 i{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #ff0000;
+    margin-bottom: 5px;
+}
+/* ! P11 BUTTONS */
+.parts .parts-image .parts-column1 .parts12 .btns1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* !BTN 1 */
+.parts .parts-image .parts-column1 .parts12 .btns1 .btn1{
+    background: #ff0000;
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+}
+/* !BTN 2 */
+.parts .parts-image .parts-column1 .parts12 .btns1 .btn2{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* todo ELEMENT 3 && 6 */
+
+.parts .parts-image .parts-column1 .parts13{
+    background: #ebebeb;
+    border-radius: 20px;
+    margin-left: 35px;
+    padding: 25px;
+    margin-top: 20px;
+}
+/* ! IMAGE 3 && 6 */
+.parts .parts-image .parts-column1 .parts13 img{
+    width: 350px;
+    height: 280px;
+}
+/* !P 1 */
+.parts .parts-image .parts-column1 .parts13 .p1{
+    font-weight: 900;
+}
+/* !P 2 */
+.parts .parts-image .parts-column1 .parts13 .p2{
+    color: #ff0000;
+}
+/* !P 3 && i */
+.parts .parts-image .parts-column1 .parts13 .p3,
+.parts .parts-image .parts-column1 .parts13 i{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #ff0000;
+    margin-bottom: 5px;
+}
+/* ! P11 BUTTONS */
+.parts .parts-image .parts-column1 .parts13 .btns1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* !BTN 1 */
+.parts .parts-image .parts-column1 .parts13 .btns1 .btn1{
+    background: #ff0000;
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+}
+/* !BTN 2 */
+.parts .parts-image .parts-column1 .parts13 .btns1 .btn2{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* ! BLOG */
+
+.blog{
+    width: 100%;
+    display: grid;
+    margin-top: 100px;
+}
+
+
+/* ! BLOG-TEXT */
+
+.blog .blog-text {
+    display: grid;
+    transition: 0.5s;
+}
+.blog .blog-text .p1{
+    justify-self: center;
+    margin-top: 20px;
+    color: #ff0000;
+}
+.blog .blog-text .p2{
+    justify-self: center;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0;
+}
+.blog .blog-text .p3{
+    justify-self: center;
+    margin: 0;
+}
+
+
+/* !BLOG-ELEMENTS */
+
+.blog .blog-elements{
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+/* todo ELEMENT 1 */
+
+.blog .blog-elements .element1{
+    margin-left: 100px;
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.blog .blog-elements .element1:hover{
+    background-color: #f7f7f7;
+}
+/* !IMG 1 */
+.blog .blog-elements .element1 img{
+    width: 400px;
+}
+/* !P1 */
+.blog .blog-elements .element1 .p1{
+    color: #ff0000;
+    font-size: 15px;
+}
+/* !P2 */
+.blog .blog-elements .element1 .p2{
+    font-weight: 900;
+}
+/* !P3 */
+.blog .blog-elements .element1 .p3{
+    font-size: 20px;
+}
+/* !BUTTON  */
+.blog .blog-elements .element1 .btn{
+    display: flex;
+    align-items: center;
+}
+/* !BTN */
+.blog .blog-elements .element1 .btn1{
+    text-decoration: none;
+    transition: 0.5s;
+}
+.blog .blog-elements .element1 .btn1:hover{
+    color: #ff0000;
+}
+/* !ARROW */
+.blog .blog-elements .element1 .btn i{
+    transition: 0.5s;
+}
+.blog .blog-elements .element1 .btn:hover i{
+    color: #ff0000;
+    transform: translateX(10px);
+}
+
+/* todo ELEMENT 2 */
+
+.blog .blog-elements .element2{
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.blog .blog-elements .element2:hover{
+    background-color: #f7f7f7;
+}
+/* !IMG 2 */
+.blog .blog-elements .element2 img{
+    width: 400px;
+}
+/* !P1 */
+.blog .blog-elements .element2 .p1{
+    color: #ff0000;
+    font-size: 15px;
+}
+/* !P2 */
+.blog .blog-elements .element2 .p2{
+    font-weight: 900;
+}
+/* !P3 */
+.blog .blog-elements .element2 .p3{
+    font-size: 20px;
+}
+/* !BUTTON  */
+.blog .blog-elements .element2 .btn{
+    display: flex;
+    align-items: center;
+
+}
+/* !BTN */
+.blog .blog-elements .element2 .btn1{
+    text-decoration: none;
+    transition: 0.5s;
+}
+.blog .blog-elements .element2 .btn1:hover{
+    color: #ff0000;
+}
+/* !ARROW */
+.blog .blog-elements .element2 .btn i{
+    transition: 0.5s;
+}
+.blog .blog-elements .element2 .btn:hover i{
+    color: #ff0000;
+    transform: translateX(10px);
+}
+
+
+/* todo ELEMENT 3 */
+
+.blog .blog-elements .element3{
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.blog .blog-elements .element3:hover{
+    background-color: #f7f7f7;
+}
+/* !IMG 3 */
+.blog .blog-elements .element3 img{
+    width: 400px;
+}
+/* !P1 */
+.blog .blog-elements .element3 .p1{
+    color: #ff0000;
+    font-size: 15px;
+}
+/* !P2 */
+.blog .blog-elements .element3 .p2{
+    font-weight: 900;
+}
+/* !P3 */
+.blog .blog-elements .element3 .p3{
+    font-size: 20px;
+}
+/* !BUTTON  */
+.blog .blog-elements .element3 .btn{
+    display: flex;
+    align-items: center;
+}
+/* !BTN */
+.blog .blog-elements .element3 .btn1{
+    text-decoration: none;
+    transition: 0.5s;
+}
+.blog .blog-elements .element3 .btn1:hover{
+    color: #ff0000;
+}
+/* !ARROW */
+.blog .blog-elements .element3 .btn i{
+    transition: 0.5s;
+}
+.blog .blog-elements .element3 .btn:hover i{
+    color: #ff0000;
+    transform: translateX(10px);
+}
+
+
+/* !FOOTER */
+
+footer{
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    margin-top: 20px;
+}
+
+/* !ROW 1 */
+
+footer .row1{
+    margin-bottom: 150px;
+}
+footer .row1 h1{
+    font-weight: 900;
+    color: #fff;
+    font-size: 40px;
+
+}
+footer .row1 span{
+    color: #ff0000;
+    font-size: 40px;
+}
+
+/* todo NAVBAR */
+footer .row1 .social-media ul{
+    display: flex;
+
+}
+footer .row1 .social-media ul li a i{
+    color: #fff;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+footer .row1 .social-media ul li a i:hover{
+    color: #ff0000;
+}
+
+/* !ROW 2 */
+
+footer .row2 h1{
+    font-weight: 900;
+    color: #fff;
+}
+
+/* todo NAVBAR 2 */
+footer .row2 .navbar2 ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #cccccc;
+    font-size: 20px;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+footer .row2 .navbar2 ul li a:hover{
+    color: #ff0000;
+}
+
+/* !ROW 3 */
+
+footer .row3{
+    margin-bottom: 60px;
+}
+footer .row3 h1{
+    font-weight: 900;
+    color: #fff;
+}
+
+/* todo NAVBAR 3 */
+footer .row3 .navbar3 ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #cccccc;
+    font-size: 20px;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+footer .row3 .navbar3 ul li a:hover{
+    color: #ff0000;
+}
+
+/* !ROW 4 */
+
+footer .row4{
+    margin-bottom: 60px;
+}
+footer .row4 h1{
+    font-weight: 900;
+    color: #fff;
+}
+
+/* todo NAVBAR 4 */
+footer .row4 .navbar4 ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #cccccc;
+    font-size: 20px;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+footer .row4 .navbar4 ul li a:hover{
+    color: #ff0000;
+}
+
+
+
+
+
+
+
+
+
+
